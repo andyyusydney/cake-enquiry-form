@@ -1,0 +1,26 @@
+{
+  "name": "ustwo_test",
+  "version": "1.0.0",
+  "description": "Cake Enquiry Form",
+  "main": "js/validation.js",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "mocha": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "jshint": "^2.9.2",
+    "mocha": "^3.0.2",
+    "zombie": "^4.2.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1"
+  },
+  "author": "Andy",
+  "license": "ISC"
+}

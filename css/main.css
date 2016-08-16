@@ -1,0 +1,78 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 12px;
+  background-color: #374550; }
+
+legend {
+  padding: 0 10px; }
+
+fieldset {
+  font-size: 20px;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 20px;
+  font-weight: bold; }
+
+input,
+input:focus,
+textarea,
+select,
+option,
+optgroup,
+button {
+  font-size: 12px;
+  box-sizing: border-box;
+  outline: none;
+  vertical-align: top;
+  background-color: #69737c;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #556269;
+  color: white; }
+
+label,
+p {
+  font-size: 12px;
+  font-weight: normal; }
+
+label.title,
+button,
+span {
+  font-weight: bold; }
+
+button {
+  height: 20px; }
+
+button[type='submit'] {
+  border-width: 3px;
+  padding: 4px 10px 18px;
+  border-color: #ccc; }
+
+button[type='reset'] {
+  padding-left: 20px;
+  font-weight: normal;
+  background-color: transparent;
+  border-width: 0;
+  text-decoration: underline;
+  padding-top: 7px; }
+
+input:not([type="checkbox"]):not([type=radio]),
+textarea {
+  width: 100%;
+  display: block;
+  height: 25px;
+  margin-top: 6px;
+  padding: 5px; }
+
+textarea.dream_cake {
+  height: 43px; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  background-color: #69737c !important; }
+
+.error {
+  font-size: 80%;
+  color: yellow;
+  font-weight: normal; }

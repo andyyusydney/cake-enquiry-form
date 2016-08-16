@@ -1,0 +1,141 @@
+// Font
+$font-family: 'Open Sans', sans-serif;
+$font-size: 12px;
+$font-color: rgb(255, 255, 255);
+$bg-color: rgb(55, 69, 80);
+$fieldset-font-size: 20px;
+
+// Borders
+$border-width: 1px;
+$border-style: solid;
+$border-color: rgb(85, 98, 105);
+
+// Inputs, Textareas, Select, Option
+$input-height: 25px;
+$input-width: 100%;
+$input-bg-color: rgb(105, 115, 124);
+$margin-top: 6px;
+$input-padding: 5px;
+$dream-cake-textarea-height: 43px;
+
+// Buttons & Input Submits
+$button-height: 20px;
+$button-width: 100%;
+$button-font-color: $font-color;
+$button-bg-color: rgb(53, 69, 79);
+$submit-button-border-width: 3px;
+$button-border-color: #ccc;
+@mixin submit-button-padding {
+	padding: 4px 10px 18px;
+}
+@mixin reset-button {
+	padding-left:20px;
+	font-weight: normal;
+	background-color: transparent;
+    border-width: 0;
+    text-decoration: underline;
+	padding-top: 7px;
+}
+
+@mixin error-style {
+	font-size: 80%;
+	color: yellow;
+	font-weight: normal;
+}
+
+// Layout
+$centered: false;
+$display: block;
+$max-width: 450px;
+$generic-padding: 10px;
+$fieldset-padding: 20px;
+
+// Center layout
+@mixin center-layout {
+	margin: 40px auto;
+}
+
+body {
+	font-family: $font-family;
+	color: $font-color;
+	font-size: $font-size;
+	background-color: $bg-color;
+}
+
+legend {
+	padding: 0 $generic-padding;
+}
+
+fieldset {
+	font-size: $fieldset-font-size;
+	max-width: $max-width; 
+	@include center-layout;
+	padding: $fieldset-padding;
+	font-weight: bold;
+}
+
+input,
+input:focus,
+textarea,
+select,
+option,
+optgroup,
+button {
+	font-size: $font-size;
+	box-sizing: border-box;
+	outline: none;
+	vertical-align: top;
+	background-color: $input-bg-color;
+	border-style: $border-style;
+	border-width: $border-width;
+	border-color: $border-color;
+	color: $font-color;
+}
+
+label,
+p {
+	font-size: $font-size;
+	font-weight: normal;
+}
+
+label.title,
+button,
+span {
+	font-weight: bold;
+}
+
+button {
+	height: $button-height;
+}
+
+button[type='submit'] {
+	border-width: $submit-button-border-width;
+    @include submit-button-padding;
+    border-color: $button-border-color;
+}
+
+button[type='reset'] {
+	@include reset-button;
+}
+
+input:not([type="checkbox"]):not([type=radio]),
+textarea {
+	width: $input-width;
+	display: $display;
+	height: $input-height;
+	margin-top: $margin-top;
+	padding: $input-padding;
+}
+
+textarea.dream_cake {
+	height: $dream-cake-textarea-height;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+	background-color: $input-bg-color !important;
+}
+
+.error {
+  @include error-style;
+}

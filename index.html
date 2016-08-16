@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="css/main.css">
+		
+	</head>
+	<body>
+		<form id="enquiry_frm" name="enquiry_frm" method="POST">
+			<fieldset>
+				<legend>Cake Enquiry Form</legend>
+				<p>
+					<label for="name">
+						<span>Name: </span>
+						<input type="text" id="name" name="username" required  />
+					</label>
+				</p>
+				<p>
+					<label for="email">
+						<span>Email: </span>
+						<input type="email" id="email" name="usermail" required />
+					</label>
+				</p>
+				<div>
+					<label class="title">Type of cake: </label>
+					<p>
+					  <label for="cupcakes">
+						<input type="checkbox" id="cupcakes" name="cupcakes" value="cupcakes" />
+						Cupcakes
+					  </label>
+					</p>
+					<p>
+					  <label for="cheesecakes">
+						<input type="checkbox" id="cheesecakes" name="cheesecakes" value="cheesecakes" />
+						Cheesecakes
+					  </label>
+					</p>
+					<p>
+					  <label for="buttercakes">
+						<input type="checkbox" id="buttercakes" name="buttercakes" value="buttercakes" />
+						Butter Cakes
+					  </label>
+					</p>
+					<p>
+					  <label for="mudcakes">
+						<input type="checkbox" id="mudcakes" name="mudcakes" value="mudcakes" />
+						Mudcakes
+					  </label>
+					</p>
+				</div>
+				<div>
+					<label class="title">Celebration type: </label>
+					<p>
+					  <label for="birthday">
+						<input type="radio" id="birthday" name="celebration_type" value="birthday" required />
+						Birthday
+					  </label>
+					</p>
+					<p>
+					  <label for="wedding">
+						<input type="radio" id="wedding" name="celebration_type" value="wedding" />
+						Wedding
+					  </label>
+					</p>
+					<p>
+					  <label for="corporate">
+						<input type="radio" id="corporate" name="celebration_type" value="corporate" />
+						Corporate
+					  </label>
+					</p>
+					<p>
+					  <label for="other">
+						<input type="radio" id="other" name="celebration_type" value="other" />
+						Other
+					  </label>
+					  <input type="text" id="other_type" name="other_type" />
+					  <span id="error" class="error"></span>
+					</p>
+				</div>
+				<p>
+					<label for="dream_cake">
+						<span>Tell us about your dream cake: </span>
+						<textarea class="dream_cake" rows="3" id="dream_cake" name="dream_cake"></textarea>
+					</label>
+				</p>
+				<p>
+					<button type="submit" class="send-away-btn" name="send">Send away</button>
+					<button type="reset" name="reset">Restart</button>
+				</p>
+			</fieldset>
+		</form>
+		<script src="js/validation.js"></script>
+	</body>
+</html>
